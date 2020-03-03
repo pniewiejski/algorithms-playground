@@ -17,8 +17,8 @@ sorted sublist.
 ### Complexity
 
 We are scanning `n` elements and then taking `(n - 1)` comparisons, and then swapping their
-position. The next step will require scanning of the remaining `(n - 1)` elements and so on. In other
-words, the number of comparisons could be described as:
+position. The next step will require scanning of the remaining `(n - 1)` elements and so on. In
+other words, the number of comparisons could be described as:
 
 ```
 (n - 1) + (n - 2) + ... + 1 = \sum_{i=1}^{n-1} i = \frac{n^2 - n}{2}
