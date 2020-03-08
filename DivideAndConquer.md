@@ -25,7 +25,7 @@ Algorithms that use divide-and-conquer approach are for instance:
 
 ## Potential issues
 
-- Stack size - you have to mind the stack size when implementing solutions based on recursion
+- Stack size - you have to mind the stack size when implementing solutions based on recursion.
 - Alternatively you can think about using some explicit data structure (eg. stack, queue) to
   implement divide-and-conquer in a non-recursive way. This approach is also the standard solution
   in programming languages that do not provide support for recursive procedures.
