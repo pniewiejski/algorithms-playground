@@ -5,6 +5,8 @@
 
 **Time complexity: O(n^2)**
 
+[Example implementation in python](./insertion_sort.py)
+
 Insertion sort builds the final array one element at the time. Thus it can work "online", meaning
 that it can sort a list as it receives it.
 

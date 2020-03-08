@@ -14,7 +14,7 @@ When looking for a solution we want to:
 Algorithms that use divide-and-conquer approach are for instance:
 
 - FFT (Fast Fourier Transform)
-- [Quicksort](./sorting/quick-sort/QuickSort.md)
+- [Quicksort](./sorting/quicksort/QuickSort.md)
 - [Merge sort](./sorting/merge-sort/MergeSort.md)
 - The Euclidean algorithm
 
