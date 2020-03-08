@@ -1,7 +1,7 @@
-# Divide and Conquer
+# Divide and Conquer ⚔️
 
 The **divide-and-conquer** paradigm breaks original problem into sub-problems, which can be solved
-on their own and then combines solutions for these sub-problems to find a solution of the original
+on their own, and then combines solutions for these sub-problems to find a solution of the original
 problem.
 
 Divide-and-conquer is usually implemented using recursion.
@@ -36,7 +36,7 @@ Algorithms that use divide-and-conquer approach are for instance:
 
 ## Example
 
-For an example let's look at the Euclidean algorithm. This algorithm will allow us to find _the
+For an example let's look at **the Euclidean algorithm**. This algorithm will allow us to find _the
 greatest common divisor_ of two numbers. Read more
 [here](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm).
 

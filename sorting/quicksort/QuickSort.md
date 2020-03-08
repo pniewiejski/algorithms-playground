@@ -1,4 +1,4 @@
-# Quick sort algorithm
+# Quick sort algorithm 🏃‍♂️ 💨
 
 **Time complexity (average):** `O(n * log n)`
 

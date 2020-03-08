@@ -10,5 +10,5 @@
 
 - [Selection sort](./sorting/selection-sort/SelectionSort.md) - Very simple, Time: `O(n^2)`
 - [Insertion sort](./sorting/insertion-sort/InsertionSort.md) - Time: `O(n^2)`
-- [Quicksort](./sorting/quicksort/QuickSort.md)
+- [Quicksort](./sorting/quicksort/QuickSort.md) - Time: `O(n * log n)`
 - [Merge sort](./sorting/MergeSort.md)
