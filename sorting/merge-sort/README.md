@@ -4,7 +4,7 @@ This is another algorithm based on the idea of [divide-and-conquer](../../Divide
 
 **Time complexity (average)** - `O(n * log n)`
 
-[Example implementation in python](./merge_sort.py)
+[Example implementation in Python](./merge_sort.py)
 
 The basic steps are:
 

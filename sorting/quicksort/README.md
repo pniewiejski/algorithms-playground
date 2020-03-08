@@ -2,7 +2,7 @@
 
 **Time complexity (average):** `O(n * log n)`
 
-[Simple implementation in python](./quicksort.py)
+[Simple implementation in Python](./quicksort.py)
 
 Quicksort is a [divide-and-conquer](../../DivideAndConquer) algorithm. The main idea is to select a
 **pivot** and partition the other elements into two _sub-arrays_, which are dealt with as

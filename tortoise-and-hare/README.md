@@ -27,7 +27,7 @@ x_i = x_{i + u*l}
 where `l` is the length of the loop to be found and `u` is the index of the first element of the
 cycle.
 
-[See an example implementation in python.](./tortoise-and-hare.py)
+[See an example implementation in Python.](./tortoise-and-hare.py)
 
 ## Time and memory complexity
 

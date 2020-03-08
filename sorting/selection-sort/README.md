@@ -2,7 +2,7 @@
 
 [See the Wikipedia page on selection sort.](https://en.wikipedia.org/wiki/Selection_sort)
 
-[Simple implementation in python. 🐍](./selection_sort.py)
+[Simple implementation in Python. 🐍](./selection_sort.py)
 
 **Time complexity is O(n^2).** Because of that this algorithm is not very efficient on large arrays.
 
