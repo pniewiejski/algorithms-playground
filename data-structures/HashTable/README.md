@@ -47,7 +47,7 @@ _rehashing_. Rehashing consists of increasing the size of underlying data struct
 existing entries to new _slots_. There is a number of strategies that could be followed.
 [Read more here.](https://en.wikipedia.org/wiki/Hash_table#Dynamic_resizing)
 
-## Downsides
+## Downsides 👎
 
 - They become inefficient when there is a lot of collisions.
   [Check out this paper](https://www.eng.tau.ac.il/~yash/C2_039_Wool.pdf), where weakness of The

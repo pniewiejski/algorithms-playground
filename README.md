@@ -1,10 +1,13 @@
 # Algorithms cheatsheet 🙈
 
-- Detecting cycles with [Tortoise and hare 🐢🐇](./tortoise-and-hare/README.md) algorithm
+## Basic ideas
 
-## Approaches to solving problems
-
+- [The _"Big O"_ notation ⏳](./BigO.md)
 - [Divide and conquer ⚔️](./DivideAndConquer.md)
+
+# Algorithms
+
+- Detecting cycles with [Tortoise and hare 🐢🐇](./tortoise-and-hare/README.md) algorithm
 
 ## Sorting algorithms
 
