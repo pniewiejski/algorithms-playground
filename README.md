@@ -26,4 +26,4 @@
 
 ## Issues 🤕
 
-In case you found any error in this repo, please let me know!
+In case you found any error (of any kind) in this repo, please let me know!

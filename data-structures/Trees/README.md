@@ -1,12 +1,7 @@
 # Binary Search Trees 🌳
 
-Trees allow us to represent some hierarchical structure. We could name distinct elements of the tree
-structure:
-
-- Root (root node) - where the tree "begins"
-- Leafs are nodes without children (bottom nodes)
-
-A tree structure where each parent node has at max two children are called **binary trees**.
+Trees allow us to represent hierarchical structures. A tree structure where each parent node has at
+max two children is called **binary tree**.
 
 ## What are binary search trees?
 
@@ -29,11 +24,11 @@ less than all values in the _right_ sub-tree.**
 
 ## Searching
 
-Because of the rules that we use for creating a binary search tree, we are using here the idea of
-the **binary search**. Time complexity of searching of an element in a binary search tree depends on
-the tree's height. Time complexity will also dement if a tree is **balanced**. In case where a
-binary search tree is **unbalanced** it can look like more of a _linked list_, instead of a tree. In
-such a case the time complexity can become `O(n)`.
+If you take a look at the rules that we use for creating a binary search tree, you can notice that
+we are using here the idea of the **binary search**. Time complexity of searching of an element in a
+binary search tree depends on the tree's height. Time complexity will also dement if a tree is
+**balanced**. In case where a binary search tree is **unbalanced** it can look like more of a
+_linked list_, instead of a tree. In such a case the time complexity can become `O(n)`.
 
 ```python
 def search_bst(value, node):
@@ -143,7 +138,7 @@ def delete_node(root: Node, value) -> Node:
 
 You are given a binary tree. Determine if it is Binary Search Tree.
 
-This problem is described [here](./validate_bst.py).
+[This problem is described and solved here.](./validate_bst.py)
 
 ## [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
 

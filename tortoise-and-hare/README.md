@@ -4,8 +4,8 @@
 
 Cycle detection algorithm. Originally designed by
 [Robert W. Floyd](https://en.wikipedia.org/wiki/Robert_W._Floyd). This algorithm allows us to detect
-cycles in sequences of values coming from a **iterated function**, which is a function that maps
-some set to itself.
+cycles in sequences of values coming from an **iterated function**, which is a function that maps a
+set to itself.
 
 ```
 f: X -> X
@@ -43,7 +43,7 @@ algorithm is constant: O(1).
 Given an array `nums` containing `n + 1` integers where these integers are between `1` and `n`
 (inclusive), prove that at least one duplicate number must exist.
 
-> Answer seems obvious and is related with the
+> Answer is related with the
 > [pigeonhole principle](https://en.wikipedia.org/wiki/Pigeonhole_principle).
 
 ```python

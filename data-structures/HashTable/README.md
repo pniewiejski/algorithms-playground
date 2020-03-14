@@ -3,18 +3,18 @@
 - [Read more on Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
 - [Simple implementation in Python](./hash_map.py)
 
-Hash table (or _hash map_) is a data structure that implements a associative array abstract
+Hash table (or _hash map_) is a data structure that implements an associative array abstract
 datatype, meaning that it is a structure which maps _keys_ to _values_.
 
 Hash table will employ a special **hash function** which it will use to compute an index. This index
-(also known as _hash code_) allows us to access appropriate "slot" where _value_ is stored.
+(also known as _hash code_) allows us to access the appropriate "slot" where the _value_ is stored.
 
-In an ideal case **hash function** will assign each key a different index. In the real world there
-is a possibility of **collisions**. When implementing a hash table we need to accommodate for such a
-case.
+In an ideal case a **hash function** will assign each key a different index. In the real world there
+is a possibility that a **collision** will occur. When implementing a hash table we need to
+accommodate for such a case.
 
 The greatest benefit of using hash tables is that, when working correctly, a hash table should have
-a constant lookup time. This means that a time complexity of a lookup is `O(1)`. In pessimistic
+a constant lookup time. This means that a time complexity of a lookup is `O(1)`. In a pessimistic
 condition a lookup time can become linear - `O(n)`.
 
 There are lots and lots of use cases for hash maps. To name just a few examples:
@@ -24,7 +24,7 @@ There are lots and lots of use cases for hash maps. To name just a few examples:
 - Associative arrays
 - Languages like Python, Ruby or JavaScript use hash maps to represent objects
 
-## Choosing a hash function 🤔
+## Choosing the hash function 🤔
 
 - A good hash function will result in a uniform spread of values in the array.
 - On the other hand, a poorly constructed hash function will result in writing items in groups and
@@ -34,7 +34,7 @@ We want to have a hash function that will provide a uniform distribution of hash
 
 ## Resizing
 
-For any hash table we can define a **load factor**, defined as a ration between the number of all
+For any hash table we can define a **load factor**, which is a ratio between the number of all
 _slots_ (_buckets_) `k` and the number of occupied entries in the table `n`.
 ![\text{load factor}=\frac{n}{k}](https://render.githubusercontent.com/render/math?math=%5Ctext%7Bload%20factor%7D%3D%5Cfrac%7Bn%7D%7Bk%7D)
 
@@ -57,5 +57,5 @@ existing entries to new _slots_. There is a number of strategies that could be f
   sudo-random order. There is no efficient way to locate an entry whose key is _"nearest"_ to a
   given key. If we wanted to list entries in some specific order, we would need an additional
   sorting step.
-- Because a hash function computation can be quite costly, hash functions might not be the best
-  choice if the number of entries is small.
+- Because a hash function computation can be quite costly, hash tables might not be the best choice
+  if the number of entries is small.
