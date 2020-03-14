@@ -1,7 +1,7 @@
 # Binary Search Trees 🌳
 
-Trees allows us to represent some hierarchical structure. We could name distinct elements of the
-tree structure:
+Trees allow us to represent some hierarchical structure. We could name distinct elements of the tree
+structure:
 
 - Root (root node) - where the tree "begins"
 - Leafs are nodes without children (bottom nodes)
@@ -15,8 +15,8 @@ the following conditions:
 
 🌴 Each node have two sub-trees which are usually called _left_ and _right_ sub-trees.
 
-🌴 Value of each node must be greater than the values in every node in the _left_ sub-tree and less
-than all values in the _right_ sub-tree.
+🌴 **Value of each node must be greater than the values in every node in the _left_ sub-tree and
+less than all values in the _right_ sub-tree.**
 
 ## Complexity
 
@@ -142,6 +142,8 @@ def delete_node(root: Node, value) -> Node:
 ## Verification
 
 You are given a binary tree. Determine if it is Binary Search Tree.
+
+This problem is described [here](./validate_bst.py).
 
 ## [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
 

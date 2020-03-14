@@ -22,6 +22,7 @@
 - [Lists 🔗](./data-structures/List/README.md)
 - [Queues 🚶‍♂️ 🚶‍♂️ 🚶‍♂️ 🚶‍♂️](./data-structures/Queue/README.md)
 - [Stacks 🥞](./data-structures/Stack/README.md)
+- [Trees 🌳](./data-structures/Trees/README.md)
 
 ## Issues 🤕
 
