@@ -1,7 +1,7 @@
 # Hash table
 
 - [Read more on Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
-- [Simple implementation in Python](./hash_map.py)
+- [Simple implementation in Python](./simple_hash_map.py)
 
 Hash table (or _hash map_) is a data structure that implements an associative array abstract
 datatype, meaning that it is a structure which maps _keys_ to _values_.
