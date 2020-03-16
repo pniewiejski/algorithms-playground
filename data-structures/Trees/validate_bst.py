@@ -7,7 +7,7 @@
 #     Value of each node must be greater than the values in every node
 #     in the left sub-tree and less than all values in the right sub-tree.
 
-#     Think of an example:
+#     Think about these examples:
 #     A) This is NOT a valid BST as 4 is smaller than 6
 #             6
 #            / \
