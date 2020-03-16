@@ -1,7 +1,7 @@
 # Tries
 
-Trie or a _prefix tree_ is a data structure that allows us to store a _set_ or an _associative
-array_. With tries keys are usually strings.
+Trie (pronounced as _"try"_) or a _prefix tree_ is a data structure that allows us to store a _set_
+or an _associative array_. With tries keys are usually strings.
 
 > Unlike a binary search tree, no node in the tree stores the key associated with that node;
 > instead, its position in the tree defines the key with which it is associated. All the descendants
@@ -34,16 +34,7 @@ This idea was explained in a very nice way in this
 - Autocomplete / predictive text (eg. on smartphone keyboard). Here we take advantage of tries'
   quick search, insert and delete operations.
 
-- We can use trie as a replacement for a _hash map_. There are a couple of advantages of tries over
-  hash maps:
-
-  👌 Lookup is faster in the pessimistic case. A hash map with many collisions has a lookup time of
-  `O(n)` (`n` being the number of entries), whereas trie has a lookup time of `O(m)`, where `m` is
-  the length of the search string 👌 No collisions. 👌 No need for hash functions, which could be
-  expensive to compute. However, there are also some disadvantages that we have to keep in mind. 👎
-  Sometimes trie can take up more space than a hash map would 👎 Floating point key can lead to long
-  chains & prefixes that are kinda useless 👎 Lookup time can be slower compared to a hash map
-  (especially if we're dealing with a slow random-access read, like when reading from a hard drive.)
+- We can use trie as a replacement for a _hash map_.
 
 ## Pros and cons
 

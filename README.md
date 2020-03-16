@@ -1,5 +1,12 @@
 # My notes on algorithms, data structures and stuff 🙈
 
+This repo is supposed to be like my note book on algorithms and data structures. By no means is it
+comprehensive or providing deeper understanding of a topic. It was supposed to more like a
+collection of brief lecture notes, containing summary of things I have found and read online.
+
+Problems that are presented here as examples are very often simple interview questions, that one
+could find online.
+
 ## Basic ideas
 
 - [The _"Big O"_ notation ⏳](./BigO.md)
@@ -23,7 +30,7 @@
 - [Queues 🚶‍♂️ 🚶‍♂️ 🚶‍♂️ 🚶‍♂️](./data-structures/Queue/README.md)
 - [Stacks 🥞](./data-structures/Stack/README.md)
 - [Trees 🌳](./data-structures/Trees/README.md)
-- [Tries])(./data-structures/Tries/README.md)
+- [Tries](./data-structures/Tries/README.md)
 
 ## Issues 🤕
 
