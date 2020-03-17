@@ -36,13 +36,13 @@ from __future__ import annotations
 from typing import List
 
 class TrieNode:
-    def __init__(self, children: dict, is_word: bool):
-        self.children = children
+    def __init__(self, is_word: bool):
+        self.children = {}
         self.is_word = is_word
 
 class Trie:
     def __init__(self):
-        self.root = TrieNode({}, False)
+        self.root = TrieNode(False)
 
     def get_root(self):
         return self.root
@@ -52,7 +52,7 @@ class Trie:
             current = self.root
             for letter in word:
                 if not letter in current.children:
-                    current.children[letter] = TrieNode({}, False)
+                    current.children[letter] = TrieNode(False)
                 current = current.children[letter]
             current.is_word = True
         return self
