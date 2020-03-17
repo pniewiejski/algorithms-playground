@@ -12,13 +12,22 @@ array_. With tries keys are usually strings.
 
 The name _trie_ comes from the word _retrieval_.
 
+![Trie image from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Trie_example.svg/300px-Trie_example.svg.png)
+
+Source: _Wikipedia_
+
 We could think of tries as storing letters of the alphabet in nodes and in order to **retrieve**
-words one has to traverse down the tree.
+words one has to traverse down the tree. In the nodes we can store different kind of data. Quite
+often it will be just boolean values. (Like in a example in
+[this python script](./autocompletion.py))
 
 Keep in mind that the size of the trie will the depend on the size of the "alphabet".
 
 > Where _hash map_ were a combination of arrays and linked lists, _tries_ are a combination of
 > arrays and pointers.
+
+This idea was explained in a very nice way in this
+[Harvard CS50 YouTube video](https://www.youtube.com/watch?v=TRg9DQFu0kU).
 
 ## Applications
 
@@ -67,6 +76,38 @@ total number of words and `k` is the length of word.
 
 Notice that time of these operations depend on the word's length. So a shorter word will be searched
 for (or inserted , or removed) faster than a longer word.
+
+# Implementation
+
+A definitely oversimplified way of implementing tries in python.
+
+```python
+class TrieNode:
+    def __init__(self, value):
+        self.children = {} # Here we simplify and assume that children is of type Dict[str, TrieNode]
+        self.value = value
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode(None)
+
+    def find(self, key):
+        current = self.root
+        for letter in key:
+            if letter in current.children:
+                current = current.children[letter]
+            else:
+                return None
+        return current.value
+
+    def insert(self, key, value):
+        current = self.root
+        for letter in key:
+            if not letter in current.children:
+                current.children[letter] = TrieNode(None)
+            current = current.children[letter]
+        current.value = value
+```
 
 ## Other sources 📚
 
