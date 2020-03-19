@@ -7,3 +7,11 @@ First Out) rule. Queues allow for two operations:
 - `dequeue` - `O(1)`
 
 # Applications
+
+- The idea of a queue is used in job schedulers.
+- Handling requests - sometimes if we are not able to handle all requests at once, they are queued.
+- Handling of interrupts in real-time systems.
+
+## Other sources 🔎
+
+- [To queue or not to queue](https://medium.com/basecs/to-queue-or-not-to-queue-2653bcde5b04)
