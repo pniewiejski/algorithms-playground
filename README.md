@@ -14,6 +14,7 @@ could find online.
 
 ## Algorithms
 
+- [Binary search 🕵️‍♂️](./binary-search/README.md)
 - Detecting cycles with [Tortoise and hare 🐢🐇](./tortoise-and-hare/README.md) algorithm
 
 ## Sorting algorithms
