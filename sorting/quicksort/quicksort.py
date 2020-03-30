@@ -1,5 +1,7 @@
-# This is a very simple and definitely not the best implementation of the quicksort algorithm
-# However, it shows the idea of pivot and sub-arrays in a very simple way
+# This is a very simple and definitely not the best implementation of the quicksort algorithm.
+# Here the operations on sub-arrays are simplified by usage of array comprehension.
+# Because of this one might argue that this is not a _proper_ quicksort implementation
+# but I think it shows the idea of pivot and sub-arrays in a very simple way and that was the point.
 
 def quicksort(array):
     if len(array) < 2:
