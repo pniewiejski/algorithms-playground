@@ -26,12 +26,13 @@ could find online.
 
 ## Data structures
 
-- [Hash Tables #️⃣](./data-structures/HashTable/README.md)
-- [Lists 🔗](./data-structures/List/README.md)
-- [Queues 🚶‍♂️ 🚶‍♂️ 🚶‍♂️ 🚶‍♂️](./data-structures/Queue/README.md)
-- [Stacks 🥞](./data-structures/Stack/README.md)
-- [Trees 🌳](./data-structures/Trees/README.md)
-- [Tries](./data-structures/Tries/README.md)
+- [Hash Table #️⃣](./data-structures/HashTable/README.md)
+- [List 🔗](./data-structures/List/README.md)
+- [Queue 🚶‍♂️ 🚶‍♂️ 🚶‍♂️ 🚶‍♂️](./data-structures/Queue/README.md)
+- [Stack 🥞](./data-structures/Stack/README.md)
+- [Tree 🌳](./data-structures/Tree/README.md)
+- [Trie 🔤](./data-structures/Trie/README.md)
+- [Heap](./data-structures/Heap/README.md)
 
 ## Issues 🤕
 
