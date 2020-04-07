@@ -31,6 +31,8 @@ Notice in example D how the values are spread across the data structure. **See t
 to have more than one element with the same value.** You can that heaps do not follow the rules of
 Binary Search Trees.
 
+⚠️ FYI: Here I'm focusing mainly on binary heaps.
+
 ## Operations on heaps
 
 The main operations performed on heaps are:
@@ -78,6 +80,23 @@ The time complexity of _max-search_ (or _min-search_) is `O(1)`.
 
 Operations _insert_ and _remove-max_ (or _remove-min_) have time complexity `O(log n)`.
 
+|   a    |  Average   | Worst case |
+| :----: | :--------: | :--------: |
+| Space  |   `O(n)`   |   `O(n)`   |
+| Search |   `O(n)`   |   `O(n)`   |
+| Insert |   `O(1)`   | `O(log n)` |
+| Remove | `O(log n)` | `O(log n)` |
+|  Peek  |   `O(1)`   |   `O(1)`   |
+
+### Building heap
+
+Let's say that you have an _n_ element array and you want to create a heap out of it. Building a
+heap by adding elements from such array, one element at a time would have a complexity of
+`O(n * log n)`, as we would have to repeat the insertion `O(log n)` for _n_ elements.
+
+There is however a faster method.
+[Find it described here.](https://en.wikipedia.org/wiki/Binary_heap#Building_a_heap)
+
 ## Applications
 
 - Priority queues - Binary heaps are often used as implementations of priority queues. This is
@@ -87,6 +106,7 @@ Operations _insert_ and _remove-max_ (or _remove-min_) have time complexity `O(l
 
 ## Further reading
 
-- [Heaps, Wikipedia](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
+- [Heap, Wikipedia](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
+- [Binary Heap, Wikipedia](https://en.wikipedia.org/wiki/Binary_heap)
 - [Learning to love heaps](https://medium.com/basecs/learning-to-love-heaps-cef2b273a238)
 - [Binary Heap Implementation](https://runestone.academy/runestone/books/published/pythonds/Trees/BinaryHeapImplementation.html)
