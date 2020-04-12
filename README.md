@@ -24,6 +24,7 @@ could find online.
 - [Insertion sort](./sorting/insertion-sort/README.md) - Time: `O(n^2)`
 - [Quicksort](./sorting/quicksort/README.md) - Time: `O(n * log n)`
 - [Merge sort](./sorting/merge-sort/README.md) - Time: `O(n * log n)`
+- [Heapsort](./sorting/heap-sort/README.md) - Time: `O(n * log n)`
 
 ## Data structures
 
