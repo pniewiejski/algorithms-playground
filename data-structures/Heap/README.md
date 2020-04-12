@@ -27,9 +27,9 @@ C)         59     D)        2
 
 A is not a valid heap. B is a valid heap. C is a so called **max-heap**, and D is a **min-heap**.
 
-Notice in example D how the values are spread across the data structure. **See that is is possible
-to have more than one element with the same value.** You can that heaps do not follow the rules of
-Binary Search Trees.
+Notice in example D how the values are spread across the data structure. **See that it is possible
+to have more than one element with the same value.** Heaps do not follow the rules of Binary Search
+Trees.
 
 ⚠️ FYI: Here I'm focusing mainly on binary heaps.
 
@@ -51,7 +51,7 @@ It is possible to implement a heap as a linked list. However, there is also an a
 implementation.
 
 In the latter variant every element of a heap is an element of some array. We can determine the
-index of any given element based on the parent node, as follows:
+index of any given element based on the parent node:
 
 ```
              (i)           : Parent Node

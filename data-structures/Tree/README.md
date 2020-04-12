@@ -117,7 +117,6 @@ def delete_node(root: Node, value) -> Node:
         root.right = delete_node(root.right, value)
 
     else: # root's value is the same as value to be removed
-
         # Cases for one or no children
         if root.left is None:
             tmp = root.right

@@ -1,11 +1,12 @@
 # My notes on algorithms, data structures and stuff 🙈
 
-This repo is supposed to be like my note book on algorithms and data structures. By no means is it
-comprehensive or providing deeper understanding of a topic. It was supposed to more like a
-collection of brief lecture notes, containing summary of things I have found and read online.
+This repo is intended to be a kind of lecture notebook on algorithms and data structures. By no
+means does it aim to be comprehensive or to provide deeper understanding of a topic. It was supposed
+to be more like a collection of brief notes, containing summaries of things I have found and read
+online. Nothing more... 💁‍♂️
 
-Problems that are presented here as examples are very often simple interview questions, that one
-could find online.
+Problems that are presented here as examples are either simple implementation examples or interview
+questions, that one could find online.
 
 ## Basic ideas
 
@@ -20,7 +21,7 @@ could find online.
 
 ## Sorting algorithms
 
-- [Selection sort](./sorting/selection-sort/SelectionSort.md) - Very simple, Time: `O(n^2)`
+- [Selection sort](./sorting/selection-sort/README.md) - Very simple, Time: `O(n^2)`
 - [Insertion sort](./sorting/insertion-sort/README.md) - Time: `O(n^2)`
 - [Quicksort](./sorting/quicksort/README.md) - Time: `O(n * log n)`
 - [Merge sort](./sorting/merge-sort/README.md) - Time: `O(n * log n)`
@@ -38,4 +39,5 @@ could find online.
 
 ## Issues 🤕
 
-In case you found any error (of any kind) in this repo, please let me know!
+If you found an error (of any kind) in this repo or there is something else that you would like to
+point out, please let me know! 🙏

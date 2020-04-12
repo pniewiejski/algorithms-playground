@@ -17,11 +17,11 @@ The name _trie_ comes from the word _retrieval_.
 Source: _Wikipedia_
 
 We could think of tries as storing letters of the alphabet in nodes and in order to **retrieve**
-words one has to traverse down the tree. In the nodes we can store different kind of data. Quite
-often it will be just boolean values. (Like in a example in
+words one has to traverse down the tree. In the nodes we can store different kinds of data. Quite
+often it will be just boolean values. (Like in the example presented in
 [this python script](./autocompletion.py))
 
-Keep in mind that the size of the trie will the depend on the size of the "alphabet".
+Keep in mind that the size of the trie will depend on the size of the "alphabet".
 
 > Where _hash map_ were a combination of arrays and linked lists, _tries_ are a combination of
 > arrays and pointers.
@@ -31,8 +31,8 @@ This idea was explained in a very nice way in this
 
 ## Applications
 
-- Autocomplete / predictive text (eg. on smartphone keyboard). Here we take advantage of tries'
-  quick search, insert and delete operations.
+- Autocomplete / predictive text (eg. on smartphone keyboard). Here we take advantage of tries quick
+  search, insert and delete operations.
 
 - We can use trie as a replacement for a _hash map_.
 
@@ -50,9 +50,9 @@ length of the search string
 
 However, there are also some disadvantages that we have to keep in mind.
 
-👎 Sometimes trie can take up more space than a hash map would
+👎 Sometimes trie can take up more space than a hash map would.
 
-👎 Floating point key can lead to long chains & prefixes that are kinda useless
+👎 Floating point key can lead to long chains & prefixes that are kinda useless.
 
 👎 Lookup time can be slower compared to a hash map (especially if we're dealing with a slow
 random-access read, like when reading from a hard drive.)
@@ -100,7 +100,8 @@ class Trie:
         current.value = value
 ```
 
-## Other sources 📚
+## Further reading 📚
 
+- [Trie, Wikipedia](https://en.wikipedia.org/wiki/Trie)
 - [Trying to understand tries](https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014)
 - [Harvard CS50](https://www.youtube.com/watch?v=TRg9DQFu0kU)

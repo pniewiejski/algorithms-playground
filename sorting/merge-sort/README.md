@@ -15,7 +15,7 @@ The basic steps are:
 
 ![Merge sort visualization, source Wikipedia](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
-> GIF source:_Wikipedia_
+_GIF source: Wikipedia_
 
 The problem that is to be understood here is **merging**. Provided that we have two sorted arrays,
 how do we merge them together to create one ordered array.

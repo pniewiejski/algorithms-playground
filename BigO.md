@@ -3,7 +3,8 @@
 We use the _"Big O"_ notation to represent a complexity of an algorithm, be it the time complexity
 or the space complexity.
 
-The _"Big O"_ should give us the idea how an algorithm will scale in relation to the size of input.
+**The _"Big O"_ should give us the idea how an algorithm will scale in relation to the size of
+input.**
 
 Not getting to far in to the underlying math, let's look at the following definition:
 

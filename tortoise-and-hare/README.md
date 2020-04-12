@@ -4,19 +4,21 @@
 
 Cycle detection algorithm. Originally designed by
 [Robert W. Floyd](https://en.wikipedia.org/wiki/Robert_W._Floyd). This algorithm allows us to detect
-cycles in sequences of values coming from an **iterated function**, which is a function that maps a
-set to itself.
+cycles in sequences of values coming from an
+[iterated function](https://en.wikipedia.org/wiki/Iterated_function), which is a function that maps
+a set to itself, and is obtained by a composition of another function _f_ with itself a number of
+times.
 
 ```
 f: X -> X
 ```
 
-The idea is to move two pointers at different speeds through the sequence of values until both are
-pointing to equal values.
+**The idea is to move two pointers at different speeds through the sequence of values until both are
+pointing to equal values.**
 
 We have to pointers, one (tortoise) at `x_i` and the other (hare) at `x_{2i}`. At each step we are
-increasing `i` by one, which effectively moves tortoise one step forward and hare two steps forward.
-Then we compare values to which tortoise and hare are pointing.
+increasing `i` by one, which effectively moves _tortoise_ one step forward and _hare_ two steps
+forward. Then we compare values to which _tortoise_ and _hare_ are pointing.
 
 There is a cycle if for any `i >= u` and `k >= 0`
 
@@ -31,12 +33,12 @@ cycle.
 
 ## Time and memory complexity
 
-**TLDR:** The time complexity of this algorithm is linear: O(n). The space complexity of this
-algorithm is constant: O(1).
+**TLDR:** The time complexity of this algorithm is linear: `O(n)`. The space complexity of this
+algorithm is constant: `O(1)`.
 
 > If we are accessing the sequence by storing and copying pointers, function evaluations, and
-> equality tests, it qualifies as a pointer algorithm. The algorithm uses O(l + u) operations of
-> these types, and O(1) storage space.
+> equality tests, it qualifies as a pointer algorithm. The algorithm uses `O(l + u)` operations of
+> these types, and `O(1)` storage space.
 
 ## Example problem
 
@@ -64,5 +66,4 @@ def find_duplicates(nums):
         hare = nums[hare]
 
     return tortoise
-
 ```

@@ -7,7 +7,8 @@ Hash table (or _hash map_) is a data structure that implements an associative ar
 datatype, meaning that it is a structure which maps _keys_ to _values_.
 
 Hash table will employ a special **hash function** which it will use to compute an index. This index
-(also known as _hash code_) allows us to access the appropriate "slot" where the _value_ is stored.
+(also known as _the hash code_) allows us to access the appropriate "slot" where the _value_ is
+stored.
 
 In an ideal case a **hash function** will assign each key a different index. In the real world there
 is a possibility that a **collision** will occur. When implementing a hash table we need to

@@ -74,7 +74,7 @@ def euclidean_algorithm(a, b):
 
 ---
 
-The thing about divide-and-conquer is that we can apply it on problems that we would normally solve
+The thing about divide-and-conquer is that we can apply it to problems that we would normally solve
 iteratively with a loop. If I gave a list of integers
 
 ```python

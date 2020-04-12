@@ -8,7 +8,7 @@ Quicksort is a [divide-and-conquer](../../DivideAndConquer) algorithm. The main 
 **pivot** and partition the other elements into two _sub-arrays_, which are dealt with as
 _sub-problems_. These sub-arrays are sorted recursively.
 
-It can be much faster than _merger sort_ or _heapsort_.
+It can be much faster than _merge sort_ or _heapsort_.
 
 Quicksort is **comparison sort** - we can sort anything for which we can define a _less-than_
 relation.

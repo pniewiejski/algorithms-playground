@@ -2,7 +2,7 @@
 
 Backtracking is an approach (algorithm) for finding all or some solutions to a computational problem
 (usually a
-[constraint satisfaction problems](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem),
+[constraint satisfaction problem](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem),
 e.g. Sudoku). Such algorithm will incrementally build _"potential solutions" (candidates)_ and when
 it decides that a _candidate_ is not valid (meaning that a _candidate_ cannot be completed to a
 valid solution), it _backtracks_, meaning that it effectively drops such _candidate_.
@@ -18,9 +18,9 @@ solutions" (candidates)_, but whenever it checks that a certain _"candidate"_ is
 solution, it _backtracks_, meaning it goes back to the point where it can make another decision.
 
 What's important to understand is that we can use backtracking in problems where a solution can be
-built i a _"step by step"_ approach.
+built in a _"step by step"_ approach.
 
-When solving a problem using backtracking you have to figure out three elements:
+When solving a problem using backtracking you have to figure out the following three elements:
 
 🗺 **Choice** - Define a _decision space_ from which you can choose _"solution candidates"_. What is
 going to be the choice that you are going to make at each step of the algorithm.
