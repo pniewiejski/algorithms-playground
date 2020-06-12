@@ -11,8 +11,8 @@ The main idea is that we divide the list (array) into two parts:
 - sorted sublist which is built up from left ot right. Initially it's empty.
 - unsorted sublist
 
-Algorithm works by finding the smallest element of the unsorted sublist and then appends it to the
-sorted sublist.
+Selection sort works by finding the smallest element of the unsorted sub-list (sub-array) and then
+appends it to the sorted sub-list.
 
 ### Complexity
 
@@ -24,6 +24,6 @@ other words, the number of comparisons could be described as:
 
 This basically comes down to the complexity of **O(n^2)**.
 
-A sorted sublist of items which is built up from left to right at the front (left) of the list and a
-sublist of the remaining unsorted items that occupy the rest of the list. Initially, the sorted
-sublist is empty and the unsorted sublist is the entire input list.
+The _sorted_ sub-list of items which is built up from left to right. That is at the front (left) of
+the original list. The sub-list of the _remaining_ unsorted items occupy the remainder of the list.
+Initially, the sorted sublist is empty and the unsorted sublist is the entire input list.

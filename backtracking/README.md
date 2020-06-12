@@ -50,7 +50,7 @@ time on that particular "potential solution". **We want to backtrack** 😉.
 ### Eight queens puzzle 👸
 
 The [eight queens puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle) tries to find a placing
-of eight queens (chess piece) on a eight by eight chess board, such that no two queens threated each
+of eight queens (chess piece) on a eight by eight chess board, such that no two queens threaten each
 other (No two queens share a row, a column or a diagonal).
 
 Problem can be generalizes to _n_ queens on a _n_ by _n_ chess board.

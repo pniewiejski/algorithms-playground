@@ -104,7 +104,7 @@ There is however a faster method.
 - Heapsort
 - Heaps allow us to quickly find the max an min elements of a collection.
 
-## Further reading
+## Further reading 📚
 
 - [Heap, Wikipedia](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
 - [Binary Heap, Wikipedia](https://en.wikipedia.org/wiki/Binary_heap)

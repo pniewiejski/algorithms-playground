@@ -8,8 +8,9 @@ def insertion_sort(array):
             current_position -= 1
 
         array[current_position] = current_value
-    
+
     return array
 
+
 if __name__ == "__main__":
-    print(insertion_sort([5,3,2,67,0,9]))
+    print(insertion_sort([5, 3, 2, 67, 0, 9]))

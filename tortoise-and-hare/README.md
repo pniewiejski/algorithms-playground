@@ -14,7 +14,7 @@ f: X -> X
 ```
 
 **The idea is to move two pointers at different speeds through the sequence of values until both are
-pointing to equal values.**
+pointing to the same element.**
 
 We have to pointers, one (tortoise) at `x_i` and the other (hare) at `x_{2i}`. At each step we are
 increasing `i` by one, which effectively moves _tortoise_ one step forward and _hare_ two steps

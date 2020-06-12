@@ -3,8 +3,8 @@
 - [Read more on Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
 - [Simple implementation in Python](./simple_hash_map.py)
 
-Hash table (or _hash map_) is a data structure that implements an associative array abstract
-datatype, meaning that it is a structure which maps _keys_ to _values_.
+Hash table (or _hash map_) is a data structure that implements an associative array abstract data
+type, meaning that it is a structure which maps _keys_ to _values_.
 
 Hash table will employ a special **hash function** which it will use to compute an index. This index
 (also known as _the hash code_) allows us to access the appropriate "slot" where the _value_ is
@@ -43,7 +43,7 @@ As the load factor grows, the hash table will become slower. The constant lookup
 keeping the load factor beneath a certain value. Usually we do not want the load factor to be
 greater than `0.7`.
 
-To keep the load factor small, hash table could be resized. This process is sometimes called
+To keep the load factor small, hash table can be resized. This process is sometimes called
 _rehashing_. Rehashing consists of increasing the size of underlying data structure and mapping
 existing entries to new _slots_. There is a number of strategies that could be followed.
 [Read more here.](https://en.wikipedia.org/wiki/Hash_table#Dynamic_resizing)
@@ -58,5 +58,5 @@ existing entries to new _slots_. There is a number of strategies that could be f
   sudo-random order. There is no efficient way to locate an entry whose key is _"nearest"_ to a
   given key. If we wanted to list entries in some specific order, we would need an additional
   sorting step.
-- Because a hash function computation can be quite costly, hash tables might not be the best choice
-  if the number of entries is small.
+- Because a hash function computation can be quite costly, hash tables may not be the best choice if
+  the number of entries is small.

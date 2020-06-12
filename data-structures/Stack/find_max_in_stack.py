@@ -3,9 +3,9 @@
 #
 #    This is a tricky task because stacks do not give us
 #    this kind of operation straight out of the box.
-#    We will have to somehow store the information about max value.
+#    We will have to somehow store the information about the max value.
 #    We will have to _cache_ the max value. Keep in mind, that this solution
-#    will have to be push and pop save. This means that we want the max opperation 
+#    will have to be push and pop safe. This means that we want the max operations
 #    to have O(1) time complexity regardless of the history of pushes and pops.
 #    This is why simply adding additional field to Stack class (e.g. self.max_value) won't
 #    work here. Because in some cases (when we pop the max value) then we'd have to perform
@@ -26,16 +26,17 @@
 from collections import deque
 from dataclasses import dataclass
 
+
 class Stack:
     def __init__(self):
         self._stack = deque()
 
     def __str__(self):
         return f"{self._stack}"
-    
+
     def push(self, value):
         self._stack.append(value)
-    
+
     def pop(self):
         return self._stack.pop()
 
@@ -44,7 +45,8 @@ class Stack:
             return self._stack[-1]
         return None
 
-@dataclass 
+
+@dataclass
 class MaxCacheEntry:
     value: int
     count: int
@@ -54,6 +56,7 @@ class MaxCacheEntry:
 
     def decrement_count(self):
         self.count -= 1
+
 
 class StackMax:
 
@@ -70,7 +73,7 @@ class StackMax:
             current_max.decrement_count()
             if current_max.count < 1:
                 self._max_cache.pop()
-        
+
         return self._stack.pop()
 
     def push(self, value):
@@ -86,6 +89,7 @@ class StackMax:
         if cache_top:
             return cache_top.value
         return None
+
 
 if __name__ == "__main__":
     stack = StackMax()

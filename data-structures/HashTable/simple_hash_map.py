@@ -7,6 +7,7 @@ Assumptions:
     - Fixed length of the underlying array
 """
 
+
 class Item:
     def __init__(self, key, value):
         self.key = key
@@ -14,6 +15,7 @@ class Item:
 
     def __str__(self):
         return "{} -> {}".format(self.key, self.value)
+
 
 class SimpleHashTable:
 
@@ -23,21 +25,22 @@ class SimpleHashTable:
 
     def _hash_function(self, key):
         return key % self.length
-    
+
     def set(self, key, value):
         new_item = Item(key, value)
-        hash = self._hash_function(key)
-        for item in self.table[hash]:
-            if item.key == key: # when using the same key twice, data is overwritten
+        computed_hash = self._hash_function(key)
+        for item in self.table[computed_hash]:
+            if item.key == key:  # when using the same key twice, data is overwritten
                 item.value = value
-        
-        self.table[hash].append(new_item)
+
+        self.table[computed_hash].append(new_item)
 
     def get(self, key):
-        hash = self._hash_function(key)
-        for item in self.table[hash]:
+        computed_hash = self._hash_function(key)
+        for item in self.table[computed_hash]:
             if item.key == key:
                 return item
+
 
 if __name__ == "__main__":
     hash_table = SimpleHashTable(10)

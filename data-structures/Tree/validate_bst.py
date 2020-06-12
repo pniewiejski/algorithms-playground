@@ -38,11 +38,13 @@
 # the values of its children.
 # We also need information the is coming from the parent.
 
+
 class Node:
     def __init__(self, value):
         self.value = value
         self.right = None
         self.left = None
+
 
 def is_valid_bst(node: Node) -> bool:
     # In this implementation we will need to visit every node twice.
@@ -54,7 +56,7 @@ def is_valid_bst(node: Node) -> bool:
     # So in case of a balanced tree the space complexity will be O(log n),
     # however in the worst case it will be O(n)
     def is_valid_util(node, lower, upper):
-        if node is  None: # base case
+        if node is None:  # base case
             return True
 
         if node.value <= lower or node.value >= upper:
@@ -65,13 +67,13 @@ def is_valid_bst(node: Node) -> bool:
 
         if not is_valid_util(node.left, lower, node.value):
             return False
-        
+
         return True
-    
+
     return is_valid_util(node, float('-inf'), float('inf'))
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     # Example B
     root = Node(5)
     root.right = Node(6)
@@ -98,4 +100,3 @@ if __name__ == "__main__":
     root.right.left = Node(6)
 
     print("Is D a valid BST? - {}".format(is_valid_bst(root)))
-

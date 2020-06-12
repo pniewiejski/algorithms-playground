@@ -7,8 +7,8 @@
 
 # We want to use **backtracking**
 
+
 def find_permutations(numbers):
-    
     result = []
 
     def swap_numbers(a, b):
@@ -21,11 +21,12 @@ def find_permutations(numbers):
 
         for index in range(start, len(numbers)):
             swap_numbers(start, index)
-            permutations_helper(start + 1) 
-            swap_numbers(start, index) # swap back
-    
+            permutations_helper(start + 1)
+            swap_numbers(start, index)  # swap back
+
     permutations_helper(0)
     return result
+
 
 if __name__ == "__main__":
     print(find_permutations([1, 2, 3]))

@@ -54,7 +54,7 @@ const int pop(node_t * head) {
 
 const int pop_front(node_t ** head) { // We want to modify head
     if (*head == NULL) {
-        printf("Error: poping from an empty list!");
+        printf("Error: Cannot pop from an empty list!");
         exit(EXIT_FAILURE);
     }
 

@@ -1,17 +1,17 @@
 # Divide and Conquer ⚔️
 
-The **divide-and-conquer** paradigm breaks original problem into sub-problems, which can be solved
-on their own, and then combines solutions for these sub-problems to find a solution of the original
-problem.
+The **divide-and-conquer** paradigm breaks the original problem into sub-problems, which can be
+solved on their own, and then combines solutions for these sub-problems to find a solution of the
+original problem.
 
 Divide-and-conquer is usually implemented using recursion.
 
 When looking for a solution we want to:
 
 1. Define the base problem. This should be the simplest case.
-2. Divide and reduce the problem until you reach the base problem.
+2. Divide and reduce the problem until the base problem is reached.
 
-Algorithms that use divide-and-conquer approach are for instance:
+Examples of algorithms that use divide-and-conquer approach:
 
 - FFT (Fast Fourier Transform)
 - [Quicksort](./sorting/quicksort/README.md)
@@ -20,13 +20,13 @@ Algorithms that use divide-and-conquer approach are for instance:
 
 ## Advantages
 
-- It allows us to solve difficult problems by breaking them down into siple sub-problems.
+- It allows us to solve difficult problems by breaking them down into simple sub-problems.
 - **Parallelism** - these algorithms can be executed on a multi-processor machine.
 
 ## Potential issues
 
 - Stack size - you have to mind the stack size when implementing solutions based on recursion.
-- Alternatively you can think about using some explicit data structure (eg. stack, queue) to
+  Alternatively you can think about using some explicit data structure (eg. stack, queue) to
   implement divide-and-conquer in a non-recursive way. This approach is also the standard solution
   in programming languages that do not provide support for recursive procedures.
 - **Sharing repeated sub-problems** - In some cases you may end up with the recursive process doing
@@ -36,7 +36,7 @@ Algorithms that use divide-and-conquer approach are for instance:
 
 ## Example
 
-For an example let's look at **the Euclidean algorithm**. This algorithm will allow us to find _the
+For example, let's look at **the Euclidean algorithm**. This algorithm will allow us to find _the
 greatest common divisor_ of two numbers. Read more
 [here](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm).
 
@@ -66,7 +66,7 @@ def euclidean_algorithm(a, b):
     # What will be our simple case?
     # When we have two numbers - a & b, if one of them is 0,
     # then the second is their greatest common divisor!
-    if (b == 0):
+    if b == 0:
         return a
     else:
         return euclidean_algorithm(b, a % b)

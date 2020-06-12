@@ -9,7 +9,7 @@ This is another algorithm based on the idea of [divide-and-conquer](../../Divide
 The basic steps are:
 
 1. **Divide** the unordered array into two two sub-arrays. This is done by finding the middle index.
-   **The basic case** here, will be a array of one element (which is always sorted 😉).
+   **The base case** here, will be an array of one element (which is always sorted 😉).
 2. **Conquer** - Recursively sort sub-arrays.
 3. **Combine** - Merge two sorted sub-arrays into one ordered array which is the result.
 

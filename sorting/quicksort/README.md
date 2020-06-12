@@ -4,8 +4,8 @@
 
 [Simple implementation in Python](./quicksort.py)
 
-Quicksort is a [divide-and-conquer](../../DivideAndConquer) algorithm. The main idea is to select a
-**pivot** and partition the other elements into two _sub-arrays_, which are dealt with as
+Quicksort is a [divide-and-conquer](../../DivideAndConquer.md) algorithm. The main idea is to select
+a **pivot** and partition the other elements into two _sub-arrays_, which are dealt with as
 _sub-problems_. These sub-arrays are sorted recursively.
 
 It can be much faster than _merge sort_ or _heapsort_.

@@ -4,8 +4,8 @@ Binary search algorithm allows us to find a searched value in a sorted array. It
 the searched value with the value in the middle of the array. If the compared values are not equal
 we eliminate the part of array which cannot contain the searched value. The algorithm continues
 until we find the searched value or the reduced array is empty which means that the searched value
-is not in the array. The principle of reducing the searched parts of the array works thanks to the
-fact that the array is sorted.
+is not in the array. The principle of reducing the searched parts of the array works due to the fact
+that the array is sorted.
 
 Let's look at an example. Assume that we are searching for a value `4` in an array
 `[1, 2, 4, 5, 8, 9, 11]`.

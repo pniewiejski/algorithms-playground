@@ -6,11 +6,12 @@ class Node:
     def __str__(self):
         return f"{self.value} -> " + str(self.next)
 
+
 def reverse(head):
     previous = None
     current = head
 
-    while current != None:
+    while current is not None:
         tmp = current.next
         current.next = previous
         previous = current

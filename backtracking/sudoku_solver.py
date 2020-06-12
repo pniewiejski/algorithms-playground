@@ -1,4 +1,3 @@
-import copy
 import pprint
 import itertools
 from typing import List
@@ -14,7 +13,7 @@ GAME = [
     [7, 0, 0, 0, 2, 0, 0, 0, 6],
     [0, 6, 0, 0, 0, 0, 2, 8, 0],
     [0, 0, 0, 4, 1, 9, 0, 0, 5],
-    [0, 0, 0, 0, 8, 0 ,0, 7, 9],
+    [0, 0, 0, 0, 8, 0, 0, 7, 9],
 ]
 
 # Solution
@@ -28,8 +27,9 @@ GAME = [
 #  [2, 8, 7, 4, 1, 9, 6, 3, 5],
 #  [3, 4, 5, 2, 8, 6, 1, 7, 9]]
 
-class SudokuGame: 
-    def __init__(self, board: List[List[float]]):
+
+class SudokuGame:
+    def __init__(self, board: List[List[int]]):
         self._board = board
 
     def __str__(self):
@@ -65,7 +65,7 @@ class SudokuSolver:
             if self._game.get_value_at(i, column) == value:
                 return False
         # check neighbors - Sudoku board is divided into 9 sub-squares.
-        # The same value cannot appeat twice in one sub-square.
+        # The same value cannot appear twice in one sub-square.
         x0 = (row // 3) * 3 # find row, column indices of the beginning of the sub-square
         y0 = (column // 3) * 3
         for i in range(3):
@@ -78,7 +78,7 @@ class SudokuSolver:
         self._solve()
         return self._game
 
-    def _solve(self) -> None:
+    def _solve(self) -> bool:
         for row in range(9):
             for column in range(9):
                 # we want to operate only on elements that we haven't found solution yet
@@ -88,7 +88,7 @@ class SudokuSolver:
                             self._game.set_value_at(row, column, value_to_check)
                             if self._solve():
                                 return True
-                            self._game.set_value_at(row, column, 0) # backtrack
+                            self._game.set_value_at(row, column, 0)  # backtrack
                     return False
         if self._game.is_solved():
             return True

@@ -1,14 +1,14 @@
 # Binary Search Trees 🌳
 
 Trees allow us to represent hierarchical structures. A tree structure where each parent node has at
-max two children is called **binary tree**.
+max two children is called a **binary tree**.
 
 ## What are binary search trees?
 
 Sometimes called _ordered binary trees_, binary search trees are a type of binary trees that satisfy
 the following conditions:
 
-🌴 Each node have two sub-trees which are usually called _left_ and _right_ sub-trees.
+🌴 Each node has two sub-trees which are usually called _left_ and _right_ sub-trees.
 
 🌴 **Value of each node must be greater than the values in every node in the _left_ sub-tree and
 less than all values in the _right_ sub-tree.**
@@ -25,17 +25,18 @@ less than all values in the _right_ sub-tree.**
 ## Searching
 
 If you take a look at the rules that we use for creating a binary search tree, you can notice that
-we are using here the idea of the **binary search**. Time complexity of searching of an element in a
-binary search tree depends on the tree's height. Time complexity will also dement if a tree is
-**balanced**. In case where a binary search tree is **unbalanced** it can look like more of a
-_linked list_, instead of a tree. In such a case the time complexity can become `O(n)`.
+we are using here the idea of the **binary search**. Time complexity of searching an element in a
+binary search tree depends on the tree's height. Time complexity will also depend on whether a tree
+is **balanced** or not. In case where a binary search tree is **unbalanced** it can resemble more of
+a _linked list_, rather than a tree structure. In case of an unbalanced tree, the time complexity
+becomes `O(n)`.
 
 ```python
 def search_bst(value, node):
     """
     Recursive implementation of BST search
     """
-    if node is None or value = node.value:
+    if node is None or value == node.value:
         return node
     if value < node.value:
         search_bst(value, node.left)
@@ -54,7 +55,7 @@ def search_bst(value, node):
             return current_node
         if value < current_node.value:
             current_node = current_node.left
-        if value > current_note:
+        if value > current_node:
             current_node = current_node.right
 ```
 
@@ -94,7 +95,7 @@ There are a couple of cases to consider here:
    parent's pointer to `null`.
 2. When we want to remove a parent with only one child. Then we remove the node and replace it with
    its child.
-3. Deleting node with two children. This is the tricky case. In this case we will want to find a
+3. Deleting a node with two children. This is the tricky case. In this case we will want to find a
    in-oder predecessor or successor and use it as a replacement. We copy the value of such node
    (let's call it node `B`) to the value slot of node we want to remove (node `A`). If `B` hasn't
    got any children we can simply remove `B`. If it has got children (eg. `C`), replace `B` with `C`

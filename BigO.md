@@ -1,12 +1,12 @@
 # Big O
 
-We use the _"Big O"_ notation to represent a complexity of an algorithm, be it the time complexity
-or the space complexity.
+We use the _"Big O"_ notation to represent complexity of algorithms, be it the time complexity or
+the space complexity.
 
-**The _"Big O"_ should give us the idea how an algorithm will scale in relation to the size of
-input.**
+**The _"Big O"_ should give us the idea how a given algorithm will scale in relation to the size of
+the input.**
 
-Not getting to far in to the underlying math, let's look at the following definition:
+Not getting to far into the underlying math, let's look at the following definition:
 
 > `T(n)` is of `O(f(n))`, if for some `c > 0` and `n_0 > 0`:
 >
@@ -16,23 +16,24 @@ Not getting to far in to the underlying math, let's look at the following defini
 - `f(n)` is a function which performance we want to describe (our algorithm)
 - `O(f(n))` will be the upper bound of resources required by `f(n)`
 
-This means that if you were to graph `T(n)` and `f(n)`, curve described by `f(n)` be "under" the
-curve described by `T(n)`.
+This means that if you were to graph `T(n)` and `f(n)`, curve described by `f(n)` would be "under"
+the curve described by `T(n)`.
 
 ---
 
 We could name some typical classes of complexity:
 
-- `O(n)` - Linear - A way to identify would be to check if you visit all nodes/items only once.
-
 - `O(k)` - Constant - Algorithms which running time is independent form the input. Mathematical
   formulas are considered to have a constant time complexity.
+
+- `O(n)` - Linear - A way to identify would be to check if you visit all nodes/items only once.
 
 - `O(log n)` - Logarithmic - eg. traversing a balanced binary tree.
 
 - `O(n * log n)` - Superlinear - eg. quicksort, merge sort
+
 - `O(n^2)` - Quadratic / Cubic / Polynomial - Easy way to detect is to check if you have a loop in a
-  loop where in each of them you are iterating over the input data. Often brute force solutions have
+  loop where in each of them you iterate over the input data. Often brute force solutions have
   polynomial complexity. Let's say that you have two arrays of numbers and you want to find common
   elements and you do it be comparing each element from the first array with every element in the
   second array.

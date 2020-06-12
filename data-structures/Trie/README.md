@@ -17,8 +17,8 @@ The name _trie_ comes from the word _retrieval_.
 Source: _Wikipedia_
 
 We could think of tries as storing letters of the alphabet in nodes and in order to **retrieve**
-words one has to traverse down the tree. In the nodes we can store different kinds of data. Quite
-often it will be just boolean values. (Like in the example presented in
+words one has to traverse down the tree. In nodes we can store different kinds of data. Quite often
+it will be just boolean values. (Like in the example presented in
 [this python script](./autocompletion.py))
 
 Keep in mind that the size of the trie will depend on the size of the "alphabet".
@@ -55,7 +55,7 @@ However, there are also some disadvantages that we have to keep in mind.
 👎 Floating point key can lead to long chains & prefixes that are kinda useless.
 
 👎 Lookup time can be slower compared to a hash map (especially if we're dealing with a slow
-random-access read, like when reading from a hard drive.)
+random-access read, like when reading from a hard drive).
 
 # Complexity
 

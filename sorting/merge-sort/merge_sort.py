@@ -12,10 +12,11 @@ def merge(a, b):
 
     return merged
 
+
 def merge_sort(array):
-    if len(array) < 2: # base case
+    if len(array) < 2:  # base case
         return array
-    
+
     middle_index = len(array) // 2
     left = array[:middle_index]
     right = array[middle_index:]
@@ -25,6 +26,7 @@ def merge_sort(array):
 
     return merge(left, right)
 
+
 if __name__ == "__main__":
-    print(merge([0,1,2], [1,2,5]))
+    print(merge([0, 1, 2], [1, 2, 5]))
     print(merge_sort([4, 3, 5, 0, 2, 1, -2, 9, 7]))

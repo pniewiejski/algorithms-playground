@@ -35,10 +35,12 @@
 from __future__ import annotations
 from typing import List
 
+
 class TrieNode:
     def __init__(self, is_word: bool):
         self.children = {}
         self.is_word = is_word
+
 
 class Trie:
     def __init__(self):
@@ -51,7 +53,7 @@ class Trie:
         for word in words:
             current = self.root
             for letter in word:
-                if not letter in current.children:
+                if letter not in current.children:
                     current.children[letter] = TrieNode(False)
                 current = current.children[letter]
             current.is_word = True
@@ -65,7 +67,8 @@ class Trie:
         for letter in node.children:
             words += self.find_words_form_node(node.children[letter], prefix + letter)
         return words
-    
+
+
 class Autocompletion:
     def __init__(self, dictionary: List[str]):
         self.dictionary = Trie().build(dictionary)
@@ -74,14 +77,15 @@ class Autocompletion:
         # Now we have to traverse as far as prefix allows us
         current = self.dictionary.get_root()
         for letter in prefix:
-            if not letter in current.children:
+            if letter not in current.children:
                 return []
             current = current.children[letter]
-        
+
         # If up to this point the function did not return then we will have some
         # auto completions to "offer"
         return self.dictionary.find_words_form_node(current, prefix)
 
+
 if __name__ == "__main__":
     auto = Autocompletion(["atom", "anathomy", "antenna"])
-    print(auto.complete("an")) # Expect ['anathomy', 'antenna']
+    print(auto.complete("an"))  # Expect ['anathomy', 'antenna']

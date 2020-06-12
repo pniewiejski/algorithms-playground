@@ -1,5 +1,6 @@
 # Simple implementation of binary heap
- 
+
+
 class BinaryMinHeap:
     def __init__(self):
         # In this implementation heap is represented as a list
@@ -48,7 +49,7 @@ class BinaryMinHeap:
 
     def _find_min_child(self, index):
         if index * 2 + 1 > self._size or self._size < 3:
-            return index * 2 + 1 
+            return index * 2 + 1
         else:
             if self._heap_list[index * 2 + 1] < self._heap_list[index * 2 + 2]:
                 return index * 2 + 1
@@ -62,6 +63,7 @@ class BinaryMinHeap:
         self._percolate_down(0)
 
         return removed
+
 
 if __name__ == "__main__":
     heap = BinaryMinHeap()

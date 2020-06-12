@@ -15,6 +15,7 @@ ALLOWED_CLOSING = {
     '}': ['{', ']', ')']
 }
 
+
 def validate_brackets(string):
     stack = deque()
     for symbol in string:
@@ -26,8 +27,8 @@ def validate_brackets(string):
                 return False
     return len(stack) == 0
 
-if __name__ == "__main__":
-    print(validate_brackets("[()({})]")) # Expect True
-    print(validate_brackets("[(())({})]{")) # Expect False
-    print(validate_brackets("[(()({})]{}")) # Expect False
 
+if __name__ == "__main__":
+    print(validate_brackets("[()({})]"))  # Expect True
+    print(validate_brackets("[(())({})]{"))  # Expect False
+    print(validate_brackets("[(()({})]{}"))  # Expect False

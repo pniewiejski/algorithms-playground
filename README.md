@@ -1,9 +1,9 @@
 # My notes on algorithms, data structures and stuff 🙈
 
 This repo is intended to be a kind of lecture notebook on algorithms and data structures. By no
-means does it aim to be comprehensive or to provide deeper understanding of a topic. It was supposed
-to be more like a collection of brief notes, containing summaries of things I have found and read
-online. Nothing more... 💁‍♂️
+means does it aim to be comprehensive or to provide any deeper understanding of the topic. It was
+supposed to be more like a collection of brief notes, containing summaries of things I have found
+and read online. Nothing more... 💁‍♂️
 
 Problems that are presented here as examples are either simple implementation examples or interview
 questions, that one could find online.

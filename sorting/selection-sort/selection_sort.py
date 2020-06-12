@@ -3,11 +3,12 @@ def swap(array: list, origin: int, destination: int):
     array[origin] = array[destination]
     array[destination] = tmp
 
+
 def find_smallest(array: list) -> int:
     index_smallest = 0
 
     for i in range(1, len(array)):
-        if array[i] < array[index_smallest]: 
+        if array[i] < array[index_smallest]:
             index_smallest = i
     return index_smallest
 
@@ -22,5 +23,6 @@ def selection_sort(array: list) -> list:
 
     return array
 
+
 if __name__ == "__main__":
-    print(selection_sort([3,4,5,2,1]))
+    print(selection_sort([3, 4, 5, 2, 1]))
