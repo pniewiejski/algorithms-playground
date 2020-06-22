@@ -1,5 +1,7 @@
 # My notes on algorithms, data structures and stuff 🙈
 
+![Markdown Formatting](https://github.com/pniewiejski/algorithms-playground/workflows/Markdown%20Formatting/badge.svg)
+
 This repo is intended to be a kind of lecture notebook on algorithms and data structures. By no
 means does it aim to be comprehensive or to provide any deeper understanding of the topic. It was
 supposed to be more like a collection of brief notes, containing summaries of things I have found
