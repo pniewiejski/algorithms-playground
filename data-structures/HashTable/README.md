@@ -1,4 +1,4 @@
-# Hash table
+# Hash Table (Hash Map)
 
 - [Read more on Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
 - [Simple implementation in Python](./simple_hash_map.py)
@@ -37,6 +37,7 @@ We want to have a hash function that will provide a uniform distribution of hash
 
 For any hash table we can define a **load factor**, which is a ratio between the number of all
 _slots_ (_buckets_) `k` and the number of occupied entries in the table `n`.
+
 ![\text{load factor}=\frac{n}{k}](https://render.githubusercontent.com/render/math?math=%5Ctext%7Bload%20factor%7D%3D%5Cfrac%7Bn%7D%7Bk%7D)
 
 As the load factor grows, the hash table will become slower. The constant lookup time depends on
