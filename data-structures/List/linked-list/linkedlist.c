@@ -1,3 +1,11 @@
+/*
+ * A very simple implementation of a singly linked list
+ *
+ * ISSUES:
+ *     - Mind that in the code below I did not bother with any kind of error handling.
+ *       It was meant to be a basic idea, not a viable solution.
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -94,7 +102,7 @@ node_t * search(node_t * head, int searched_value) {
     return NULL;
 }
 
-node_t * remove_entry(node_t ** head, node_t * entry) {
+int remove_entry(node_t ** head, node_t * entry) {
     node_t ** cursor = head;
     
     while((*cursor) != entry) {
@@ -104,7 +112,26 @@ node_t * remove_entry(node_t ** head, node_t * entry) {
     free(*cursor);
     (*cursor) = entry->next;
 
-    return NULL;
+    return 0;
+}
+
+int remove_kth_entry(node_t** head, int k) {
+    node_t** cursor = head;
+    int index = 0;
+    while (index != k) {
+        cursor = &(*cursor)->next;
+        if (!(*cursor)) {
+            printf("Argument out of range\n");
+            return -1;
+        }
+        index++;
+    }
+
+    node_t* tmp = (*cursor)->next;
+    free(*cursor);
+    (*cursor) = tmp;
+
+    return 0;
 }
 
 void print(const node_t * head) {
@@ -119,6 +146,7 @@ void print(const node_t * head) {
 }
 
 int main() {
+    printf("[TRACER] Create a head of a linked list");
     node_t * head = create_node(1, NULL);
     append(head, 2);
     append(head, 3);
@@ -131,6 +159,7 @@ int main() {
     pop_front(&head);
     print(head);
 
+    printf("[TRACER] Test searching for elements");
     append(head, 5);
     print(head);
     node_t * searched = search(head, 2);
@@ -138,10 +167,18 @@ int main() {
     searched = search(head, 5);
     printf("Searched value found at: %p, with value: %d\n", searched, (searched ? searched->value : 0));
 
+    printf("[TRACER] Test removing entries by element's value");
     print(head);
     remove_entry(&head, searched);
     print(head);
-    remove_entry(&head, head);
+    remove_entry(&head, head); // This is a case where we can see why passing &head is important!
+    print(head);
+
+    printf("[TRACER] Test removing the k-th element\n");
+    append(head, 6);
+    append(head, 7);
+    print(head);
+    remove_kth_entry(&head, 2);
     print(head);
     return 0;
 }
