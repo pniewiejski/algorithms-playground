@@ -19,7 +19,7 @@ questions, that one could find online.
 
 - [Binary search 🕵️‍♂️](./binary-search/)
 - [Backtracking](./backtracking/)
-- Detecting cycles with [Tortoise and hare 🐢🐇](./tortoise-and-hare/) algorithm
+- Detecting cycles with [Tortoise and hare 🐢🐇](graphs/tortoise-and-hare/) algorithm
 
 ## Sorting algorithms
 
