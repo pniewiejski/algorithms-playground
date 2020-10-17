@@ -42,4 +42,4 @@ questions, that one could find online.
 ## Issues 🤕
 
 If you found an error (of any kind) in this repo or there is something else that you would like to
-point out, please let me know! 🙏
+point out, please let me know!
