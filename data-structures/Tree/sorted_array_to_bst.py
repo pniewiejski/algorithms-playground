@@ -17,7 +17,7 @@ class Node:
         self.left = None
 
     def __str__(self):
-        return f"{{ {self.value}:  {{ left: {self.left}, right: {{ {self.right} }} }}"
+        return f"{{ {self.value}:  {{ left: {self.left}, right: {self.right} }} }}"
 
 
 def array_2_bst(array):
