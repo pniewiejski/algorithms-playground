@@ -104,6 +104,10 @@ There is however a faster method.
 - Heapsort
 - Heaps allow us to quickly find the max an min elements of a collection.
 
+You can find a real life application of a min-heap in the source code of `libuv`. It stores timers
+in a heap data structure. See https://github.com/libuv/libuv/blob/v1.x/src/timer.c#L168 and
+https://github.com/libuv/libuv/blob/v1.x/src/heap-inl.h#L67.
+
 ## Further reading 📚
 
 - [Heap, Wikipedia](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
