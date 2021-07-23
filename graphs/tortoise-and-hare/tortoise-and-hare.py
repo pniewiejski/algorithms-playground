@@ -39,7 +39,7 @@ def tortoise_and_hare(x0, f):
     # Hare moves one step at a time while tortoise is still.
     # Increment `l` until `u` is found.
     l = 1
-    hare = f(tortoise)
+    hare = f(hare)
     while tortoise != hare:
         hare = f(hare)
         l += 1
