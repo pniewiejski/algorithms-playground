@@ -49,7 +49,7 @@ The idea here is that, if we have two integers `a` and `b`, we know that:
 If we can present `a` in a form of
 
 ```
-a = b * r + c
+a = b * c + r
 ```
 
 where `r` and `c` are some integers, and `b != 0`, then
