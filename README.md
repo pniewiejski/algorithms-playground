@@ -20,6 +20,7 @@ questions, that one could find online.
 - [Binary search 🕵️‍♂️](./binary-search/)
 - [Backtracking](./backtracking/)
 - Detecting cycles with [Tortoise and hare 🐢🐇](graphs/tortoise-and-hare/) algorithm
+- [Dynamic programming 📝](./dynamic-programming/)
 
 ## Sorting algorithms
 
