@@ -10,12 +10,14 @@ ITEMS = [
 
 MAX_BACKPACK_WEIGHT = 4
 
+# This is the 2D matrix (list of lists) that is used to track solutions of sub-problems
+# additional row and column with zeros is allocated for the base case (0kg max weight, no stolen items)
 memorized_solutions = [[0 for _ in range(MAX_BACKPACK_WEIGHT + 1)] for _ in range(len(ITEMS) + 1)]
 
-def getItem(item_number): return ITEMS[item_number - 1]
-def get_item_value(item_number): return getItem(item_number)["price"]
-def get_item_weight(item_number): return getItem(item_number)["weight"]
-def get_item_name(item_number): return getItem(item_number)["name"]
+def get_item(item_number): return ITEMS[item_number - 1]
+def get_item_value(item_number): return get_item(item_number)["price"]
+def get_item_weight(item_number): return get_item(item_number)["weight"]
+def get_item_name(item_number): return get_item(item_number)["name"]
 
 for item_number in range(1, len(ITEMS) + 1):
     for max_bagpack_weight in range(1, MAX_BACKPACK_WEIGHT + 1):
