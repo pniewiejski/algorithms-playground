@@ -43,7 +43,7 @@ def print_solution(solution: List[int]):
     board = [make_row(size) for _ in range(size)]
 
     for column, row in enumerate(solution):
-        board[row][column] = "$"  # mark queen's position
+        board[column][row] = "$"  # mark queen's position
     pprint(board)
 
 
